@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f97316,25:ec4899,50:a855f7,75:6366f1,100:0ea5e9&height=230&section=header&text=Abhishek%20Karthik%20J&fontSize=58&fontAlign=50&fontAlignY=42&desc=Chennai%2C%20India%20%F0%9F%87%AE%F0%9F%87%B3&descAlign=50&descAlignY=62&fontColor=ffffff&descColor=ffffff&descSize=16&animation=twinkling" width="100%"/>
+<img src="https://raw.githubusercontent.com/Abhishek-karthik/Abhishek-karthik/main/header.svg" width="100%" alt="Abhishek Karthik J"/>
 
 <div align="center">
 
