@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Abhishek-karthik/Abhishek-karthik/main/header.svg" width="100%" alt="Abhishek Karthik J"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,50:1f2937,100:374151&height=220&section=header&text=Abhishek%20Karthik%20J&fontSize=60&fontAlign=50&fontAlignY=50&fontColor=ffffff&desc=Chennai,%20India&descAlign=50&descAlignY=70&descSize=16&animation=twinkling" width="100%"/>
 
 <div align="center">
 
@@ -50,20 +50,20 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Abhishek-karthik&show_icons=true&hide_border=true&bg_color=0B1120&title_color=10B981&icon_color=06B6D4&text_color=E5E7EB&rank_icon=github&include_all_commits=true&count_private=true" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Abhishek-karthik&show_icons=true&theme=onedark&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true" height="170"/>
 &nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek-karthik&layout=compact&hide_border=true&bg_color=0B1120&title_color=10B981&text_color=E5E7EB&langs_count=8" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek-karthik&layout=compact&theme=onedark&hide_border=true&langs_count=8" height="170"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=Abhishek-karthik&hide_border=true&background=0B1120&stroke=3B82F6&ring=06B6D4&fire=10B981&currStreakLabel=10B981&sideLabels=E5E7EB&dates=E5E7EB" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=Abhishek-karthik&theme=onedark&hide_border=true" alt="GitHub Streak"/>
 
 </div>
 
 <br/>
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek-karthik&bg_color=0B1120&color=E5E7EB&line=06B6D4&point=10B981&hide_border=true&area=true&area_color=3B82F6&custom_title=Contribution+Activity" width="96%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek-karthik&theme=github-dark&hide_border=true&area=true&custom_title=Contribution+Activity" width="96%"/>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
