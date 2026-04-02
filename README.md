@@ -3,7 +3,7 @@
 <div align="center">
 
 <a href="https://readme-typing-svg.herokuapp.com">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=A855F7&center=true&vCenter=true&width=600&height=50&lines=Turning+data+into+decisions+🧠;Building+ML+models+that+actually+work+⚡;From+genomics+to+web+apps+🚀;Deep+Learning+enthusiast+%26+builder+🔥" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=A855F7&center=true&vCenter=true&width=600&height=50&lines=Turning+data+into+decisions+%F0%9F%A7%A0;Building+ML+models+that+actually+work+%E2%9A%A1;From+genomics+to+web+apps+%F0%9F%9A%80;Deep+Learning+enthusiast+%26+builder+%F0%9F%94%A5" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -112,7 +112,7 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/Let's_Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishek-karthik-j/)
+[![LinkedIn](https://img.shields.io/badge/Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishek-karthik-j/)
 [![GitHub](https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abhishek-karthik)
 
 <br/>
