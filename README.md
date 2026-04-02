@@ -50,20 +50,20 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Abhishek-karthik&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=ec4899&text_color=c9d1d9&rank_icon=github&include_all_commits=true&count_private=true" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Abhishek-karthik&show_icons=true&hide_border=true&bg_color=0B1120&title_color=10B981&icon_color=06B6D4&text_color=E5E7EB&rank_icon=github&include_all_commits=true&count_private=true" height="170"/>
 &nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek-karthik&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&langs_count=8" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek-karthik&layout=compact&hide_border=true&bg_color=0B1120&title_color=10B981&text_color=E5E7EB&langs_count=8" height="170"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=Abhishek-karthik&theme=tokyonight-duo&hide_border=true&background=0d1117&stroke=6366f1&ring=a855f7&fire=ec4899&currStreakLabel=a855f7&sideLabels=c9d1d9&dates=c9d1d9" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=Abhishek-karthik&hide_border=true&background=0B1120&stroke=3B82F6&ring=06B6D4&fire=10B981&currStreakLabel=10B981&sideLabels=E5E7EB&dates=E5E7EB" alt="GitHub Streak"/>
 
 </div>
 
 <br/>
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek-karthik&bg_color=0d1117&color=a855f7&line=6366f1&point=ec4899&hide_border=true&area=true&area_color=1e1b4b&custom_title=Contribution+Activity" width="96%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek-karthik&bg_color=0B1120&color=E5E7EB&line=06B6D4&point=10B981&hide_border=true&area=true&area_color=3B82F6&custom_title=Contribution+Activity" width="96%"/>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
@@ -88,5 +88,3 @@
 [![GitHub](https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abhishek-karthik)
 
 </div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f97316,33:ec4899,66:a855f7,100:6366f1&height=120&section=footer" width="100%"/>
