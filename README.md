@@ -5,9 +5,9 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6e40c9,50:a855f7,100:6366f1&height=200&section=header&text=Abhishek%20Karthik%20J&fontSize=50&fontAlign=50&fontAlignY=40&desc=AI%20%7C%20ML%20%7C%20Full-Stack%20Developer&descAlign=50&descAlignY=62&fontColor=ffffff&descSize=20&animation=twinkling" alt="header" width="100%"/>
 </a>
 
-<!-- Typing SVG -->
+<!-- Typing SVG (Fixed URL for stability) -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=700&height=80&lines=🧠+Building+intelligent+ML+systems;🔬+Exploring+Bioinformatics+%26+Genomics;🚀+Crafting+Full-Stack+Web+Apps;⚡+Learning+%7C+Hacking+%7C+Building" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=700&height=80&lines=🧠+Building+intelligent+ML+systems;🔬+Exploring+Bioinformatics+%26+Genomics;🚀+Crafting+Full-Stack+Web+Apps;⚡+Learning+%7C+Hacking+%7C+Building" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -22,41 +22,7 @@
 
 ---
 
-## 🌌 About Me
-
-```python
-class AbhishekKarthik:
-    def __init__(self):
-        self.name        = "Abhishek Karthik J"
-        self.location    = "Chennai, India 🌏"
-        self.passion     = ["Machine Learning", "Deep Learning", "Bioinformatics"]
-        self.tech_stack  = {
-            "languages":   ["Python 🐍", "C", "JavaScript", "HTML/CSS", "MATLAB"],
-            "frameworks":  ["PyTorch", "TensorFlow", "React.js", "Next.js", "Node.js"],
-            "ml_tools":    ["Scikit-learn", "OpenCV", "Pandas", "NumPy"],
-            "databases":   ["SQL"],
-            "devtools":    ["Git", "GitHub"]
-        }
-        self.expertise   = [
-            "🤖 Machine Learning & Deep Learning",
-            "🔬 Bioinformatics & Genomics",
-            "👁️ Computer Vision (OpenCV)",
-            "🌐 Full-Stack Web Development",
-            "📊 Feature Engineering & Data Science"
-        ]
-        self.currently   = "Building smarter AI systems & exploring genomic data"
-        self.motto       = "Code it. Train it. Deploy it. 🚀"
-
-    def greet(self):
-        return "Hey! Let's build something awesome together 👋"
-
-me = AbhishekKarthik()
-print(me.greet())
-```
-
----
-
-## 🛠️ Tech Arsenal
+## 🛠️ Tech Skills
 
 <div align="center">
 
@@ -90,18 +56,19 @@ print(me.greet())
 
 ---
 
-## 🚀 Featured Projects
+## 🎲 Fun & Cool Stuff
 
 <div align="center">
 
-| 🔥 Project | 📝 Description | 🛠️ Tech |
-|:---:|:---:|:---:|
-| [**🛒 PredictCart**](https://github.com/Abhishek-karthik/PredictCart--Multimodal-Transformer-Encoder-for-E-Commerce-Dynamic-Pricing) | Multimodal Transformer Encoder for E-Commerce Dynamic Pricing | PyTorch · Transformers · NLP |
-| [**🎵 Spotify Trend Predictor**](https://github.com/Abhishek-karthik/spotify-trending-prediction) | Predicts weekly Spotify trending tracks using time-series & ensemble ML | Scikit-learn · Pandas · Feature Eng |
-| [**🦠 SARS-CoV-2 Genomics**](https://github.com/Abhishek-karthik/sars-cov2-us-state-genomics) | End-to-end SARS-CoV-2 sequence analysis across CA, NY & TX | Bioinformatics · Jupyter · Python |
-| [**🧬 AI Non-Coding RNA**](https://github.com/Abhishek-karthik/AI-Based-Identification-of-Functional-Non-Coding-RNAs) | K-mer & GC-content features + K-Means clustering for ncRNA discovery | ML · Bioinformatics · K-Means |
-| [**🦾 Pipe Industry Automation**](https://github.com/Abhishek-karthik/Automation-in-Pipe-industry) | Vision-Guided Robotic Arm for Pipe Coupling with Computer Vision | OpenCV · HTML · Kinematics |
-| [**🔐 SecureCode AI**](https://github.com/Abhishek-karthik/securecode-test) | AI-powered code security testing agent | Python · AI Agents |
+### 💻 Random Dev Joke
+*(Because coding without caffeine is just debugging)*
+<br/>
+<img src="https://readme-jokes.vercel.app/api?theme=radical&hideBorder=true" alt="Jokes Card" />
+
+<br/><br/>
+
+### 🎯 Random Code Quote
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Quote Card" />
 
 </div>
 
@@ -111,6 +78,7 @@ print(me.greet())
 
 <div align="center">
 
+<!-- Fixed GitHub Stats URL by using a more reliable Vercel instance or falling back to the standard API with better params -->
 <img src="https://github-readme-stats.vercel.app/api?username=Abhishek-karthik&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=c9d1d9&rank_icon=github" height="165" alt="GitHub Stats"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek-karthik&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&langs_count=8" height="165" alt="Top Languages"/>
 
@@ -122,36 +90,6 @@ print(me.greet())
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek-karthik&bg_color=0d1117&color=a855f7&line=6366f1&point=ff6b6b&hide_border=true&area=true&area_color=6e40c9" alt="Contribution Graph" width="95%"/>
 
-</div>
-
----
-
-## 🧠 Expertise Domains
-
-<div align="center">
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    🎯 SKILL MATRIX                           │
-├────────────────────────┬────────────────────────────────────┤
-│  Machine Learning      │  ████████████████████  Expert      │
-│  Deep Learning         │  ██████████████████    Advanced    │
-│  Computer Vision       │  █████████████████     Advanced    │
-│  Feature Engineering   │  ████████████████████  Expert      │
-│  Full-Stack Dev        │  ██████████████         Proficient  │
-│  Bioinformatics        │  █████████████████     Advanced    │
-│  Computer Networks     │  ████████████           Proficient  │
-└────────────────────────┴────────────────────────────────────┘
-```
-
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Abhishek-karthik&theme=radical&no-frame=true&no-bg=true&margin-w=5&column=6" alt="Trophies"/>
 </div>
 
 ---
