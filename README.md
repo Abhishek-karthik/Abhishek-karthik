@@ -1,11 +1,9 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0ea5e9,25:6366f1,50:a855f7,75:ec4899,100:f97316&height=200&section=header&text=Abhishek%20Karthik%20J&fontSize=55&fontAlign=50&fontAlignY=50&fontColor=ffffff&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f97316,25:ec4899,50:a855f7,75:6366f1,100:0ea5e9&height=230&section=header&text=Abhishek%20Karthik%20J&fontSize=58&fontAlign=50&fontAlignY=42&desc=Chennai%2C%20India%20%F0%9F%87%AE%F0%9F%87%B3&descAlign=50&descAlignY=62&fontColor=ffffff&descColor=ffffff&descSize=16&animation=twinkling" width="100%"/>
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishek-karthik-j/)
 [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abhishek-karthik)
-![Chennai](https://img.shields.io/badge/📍_Chennai,_India-6366f1?style=for-the-badge)
-![Views](https://komarev.com/ghpvc/?username=Abhishek-karthik&color=ec4899&style=for-the-badge&label=PROFILE+VIEWS)
 
 </div>
 
