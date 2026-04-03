@@ -1,81 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
   <defs>
-    <!-- Deep synthwave sky gradient -->
-    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#0d0015"/>
-      <stop offset="40%"  stop-color="#1a0030"/>
-      <stop offset="70%"  stop-color="#2d0060"/>
-      <stop offset="100%" stop-color="#1a0030"/>
+    <!-- Background gradient: dark navy to deep teal -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#050d1a"/>
+      <stop offset="50%"  stop-color="#071a2e"/>
+      <stop offset="100%" stop-color="#050d1a"/>
     </linearGradient>
 
-    <!-- Sun gradient -->
-    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#FFD700"/>
-      <stop offset="30%"  stop-color="#FF8C00"/>
-      <stop offset="60%"  stop-color="#FF4500"/>
-      <stop offset="100%" stop-color="#FF1493"/>
-    </linearGradient>
-
-    <!-- Sun glow radial -->
-    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#FF6B00" stop-opacity="0.8"/>
-      <stop offset="50%"  stop-color="#FF1493" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#8B00FF" stop-opacity="0"/>
+    <!-- Teal ambient light from center-bottom -->
+    <radialGradient id="ambientTeal" cx="50%" cy="100%" r="70%">
+      <stop offset="0%"   stop-color="#00d4aa" stop-opacity="0.18"/>
+      <stop offset="60%"  stop-color="#0099ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#050d1a"  stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Horizon glow -->
-    <radialGradient id="horizonGlow" cx="50%" cy="0%" r="80%" fx="50%" fy="0%">
-      <stop offset="0%"   stop-color="#FF1493" stop-opacity="0.7"/>
-      <stop offset="50%"  stop-color="#8B00FF" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#0d0015"  stop-opacity="0"/>
+    <!-- Gold orb left -->
+    <radialGradient id="goldLeft" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#f59e0b" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Grid fade gradient (top=transparent, bottom=opaque) -->
-    <linearGradient id="gridFade" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#FF00FF" stop-opacity="0"/>
-      <stop offset="60%"  stop-color="#FF00FF" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#00FFFF" stop-opacity="0.8"/>
+    <!-- Blue orb right -->
+    <radialGradient id="blueRight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#3b82f6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gold shimmer gradient for text -->
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#fbbf24"/>
+      <stop offset="30%"  stop-color="#fef3c7"/>
+      <stop offset="50%"  stop-color="#ffffff"/>
+      <stop offset="70%"  stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+      <!-- Animated shimmer sweep -->
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="3s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <!-- Text neon gradient -->
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#FFD700">
-        <animate attributeName="stop-color" values="#FFD700;#FF8C00;#FF1493;#FFD700" dur="5s" repeatCount="indefinite"/>
+    <!-- Teal subtitle gradient -->
+    <linearGradient id="tealSub" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#5eead4">
+        <animate attributeName="stop-color" values="#5eead4;#93c5fd;#5eead4" dur="5s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%"  stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#00FFFF">
-        <animate attributeName="stop-color" values="#00FFFF;#FF1493;#FFD700;#00FFFF" dur="5s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-
-    <linearGradient id="subGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#FF1493">
-        <animate attributeName="stop-color" values="#FF1493;#00FFFF;#FF1493" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#00FFFF">
-        <animate attributeName="stop-color" values="#00FFFF;#FF1493;#00FFFF" dur="4s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#93c5fd">
+        <animate attributeName="stop-color" values="#93c5fd;#5eead4;#93c5fd" dur="5s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
-    <!-- Glow filters -->
-    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <!-- Hex stroke gradient -->
+    <linearGradient id="hexStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.3"/>
+    </linearGradient>
 
-    <filter id="sunFilter" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <!-- Bottom wave gold gradient -->
+    <linearGradient id="waveGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#f59e0b" stop-opacity="0.0"/>
+      <stop offset="30%"  stop-color="#f59e0b" stop-opacity="0.5"/>
+      <stop offset="50%"  stop-color="#fef3c7" stop-opacity="0.8"/>
+      <stop offset="70%"  stop-color="#f59e0b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.0"/>
+    </linearGradient>
 
-    <filter id="glowText" x="-20%" y="-50%" width="140%" height="200%">
+    <!-- Glow filter -->
+    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%">
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -84,173 +72,269 @@
       </feMerge>
     </filter>
 
-    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="12"/>
+    <filter id="softBloom" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14"/>
     </filter>
 
-    <!-- Star pattern -->
-    <symbol id="star" viewBox="0 0 4 4">
-      <circle cx="2" cy="2" r="1" fill="white"/>
+    <filter id="hexGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="dotGlow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+
+    <!-- Hexagon symbol -->
+    <symbol id="hex" viewBox="-10 -10 20 20">
+      <polygon points="0,-9 7.8,-4.5 7.8,4.5 0,9 -7.8,4.5 -7.8,-4.5" fill="none" stroke="url(#hexStroke)" stroke-width="0.8"/>
     </symbol>
   </defs>
 
-  <!-- === BACKGROUND === -->
-  <rect width="1200" height="300" fill="url(#sky)"/>
+  <!-- ====== BACKGROUND ====== -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
 
-  <!-- Stars layer -->
-  <g opacity="0.9">
-    <circle cx="50"   cy="20"  r="0.8" fill="#fff"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite"/></circle>
-    <circle cx="120"  cy="45"  r="1"   fill="#fff"><animate attributeName="opacity" values="0.5;1;0.3" dur="3.4s" repeatCount="indefinite"/></circle>
-    <circle cx="200"  cy="15"  r="0.7" fill="#FFD7FF"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.8s" repeatCount="indefinite" begin="0.5s"/></circle>
-    <circle cx="310"  cy="30"  r="1"   fill="#fff"><animate attributeName="opacity" values="0.1;1;0.1" dur="4.1s" repeatCount="indefinite" begin="1s"/></circle>
-    <circle cx="420"  cy="10"  r="0.8" fill="#AAFFFF"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="0.3s"/></circle>
-    <circle cx="540"  cy="35"  r="1"   fill="#fff"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.5s" repeatCount="indefinite" begin="1.5s"/></circle>
-    <circle cx="680"  cy="18"  r="0.7" fill="#FFD7FF"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.7s" repeatCount="indefinite" begin="0.8s"/></circle>
-    <circle cx="780"  cy="42"  r="1"   fill="#fff"><animate attributeName="opacity" values="0.1;1;0.1" dur="2.9s" repeatCount="indefinite" begin="0.2s"/></circle>
-    <circle cx="880"  cy="12"  r="0.8" fill="#AAFFFF"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.3s" repeatCount="indefinite" begin="1.2s"/></circle>
-    <circle cx="950"  cy="28"  r="1"   fill="#fff"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite" begin="0.6s"/></circle>
-    <circle cx="1050" cy="8"   r="0.7" fill="#FFD7FF"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.2s" repeatCount="indefinite" begin="1.8s"/></circle>
-    <circle cx="1130" cy="40"  r="1"   fill="#fff"><animate attributeName="opacity" values="0.1;1;0.1" dur="2.2s" repeatCount="indefinite" begin="0.9s"/></circle>
-    <circle cx="160"  cy="60"  r="0.6" fill="#fff"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s"   repeatCount="indefinite" begin="2s"/></circle>
-    <circle cx="760"  cy="55"  r="0.6" fill="#AAFFFF"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.7s" repeatCount="indefinite" begin="0.7s"/></circle>
-    <circle cx="1000" cy="55"  r="0.8" fill="#fff"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite" begin="1.4s"/></circle>
-  </g>
+  <!-- Ambient light -->
+  <rect width="1200" height="300" fill="url(#ambientTeal)"/>
 
-  <!-- === SUN GLOW (soft bloom behind sun) === -->
-  <ellipse cx="600" cy="148" rx="160" ry="80" fill="url(#sunGlow)" filter="url(#softBlur)">
-    <animate attributeName="rx" values="160;180;160" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="ry" values="80;95;80"    dur="4s" repeatCount="indefinite"/>
+  <!-- Left gold orb -->
+  <ellipse cx="180" cy="200" rx="220" ry="180" fill="url(#goldLeft)">
+    <animate attributeName="cx" values="180;220;180" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="200;170;200" dur="9s"  repeatCount="indefinite"/>
   </ellipse>
 
-  <!-- Horizon light bleed -->
-  <rect x="0" y="130" width="1200" height="170" fill="url(#horizonGlow)" opacity="0.6"/>
+  <!-- Right blue orb -->
+  <ellipse cx="1020" cy="120" rx="240" ry="180" fill="url(#blueRight)">
+    <animate attributeName="cx" values="1020;980;1020" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="120;160;120"   dur="10s" repeatCount="indefinite"/>
+  </ellipse>
 
-  <!-- === SUN === -->
-  <!-- Sun main circle -->
-  <clipPath id="sunClip">
-    <rect x="490" y="80" width="220" height="68"/>
-  </clipPath>
-  <circle cx="600" cy="148" r="65" fill="url(#sunGrad)" filter="url(#sunFilter)" clip-path="url(#sunClip)">
-    <animate attributeName="r" values="65;68;65" dur="3s" repeatCount="indefinite"/>
-  </circle>
+  <!-- Center soft bloom behind text -->
+  <ellipse cx="600" cy="140" rx="300" ry="100" fill="#1e3a5f" opacity="0.25" filter="url(#softBloom)"/>
 
-  <!-- Sun scan lines (horizontal cuts) -->
-  <g clip-path="url(#sunClip)">
-    <rect x="490" y="100" width="220" height="3" fill="#1a0030" opacity="0.9"/>
-    <rect x="490" y="108" width="220" height="3" fill="#1a0030" opacity="0.9"/>
-    <rect x="490" y="116" width="220" height="3" fill="#1a0030" opacity="0.9"/>
-    <rect x="490" y="124" width="220" height="3" fill="#1a0030" opacity="0.9"/>
-    <rect x="490" y="132" width="220" height="3" fill="#1a0030" opacity="0.9"/>
-    <rect x="490" y="140" width="220" height="3" fill="#1a0030" opacity="0.9"/>
+  <!-- ====== CIRCUIT/DOT GRID ====== -->
+  <!-- Tiny dots grid -->
+  <g fill="#1e40af" opacity="0.25">
+    <circle cx="60"   cy="30"  r="1"/><circle cx="120"  cy="30"  r="1"/>
+    <circle cx="180"  cy="30"  r="1"/><circle cx="240"  cy="30"  r="1"/>
+    <circle cx="300"  cy="30"  r="1"/><circle cx="360"  cy="30"  r="1"/>
+    <circle cx="420"  cy="30"  r="1"/><circle cx="480"  cy="30"  r="1"/>
+    <circle cx="540"  cy="30"  r="1"/><circle cx="600"  cy="30"  r="1"/>
+    <circle cx="660"  cy="30"  r="1"/><circle cx="720"  cy="30"  r="1"/>
+    <circle cx="780"  cy="30"  r="1"/><circle cx="840"  cy="30"  r="1"/>
+    <circle cx="900"  cy="30"  r="1"/><circle cx="960"  cy="30"  r="1"/>
+    <circle cx="1020" cy="30"  r="1"/><circle cx="1080" cy="30"  r="1"/>
+    <circle cx="1140" cy="30"  r="1"/>
+
+    <circle cx="60"   cy="90"  r="1"/><circle cx="120"  cy="90"  r="1"/>
+    <circle cx="180"  cy="90"  r="1"/><circle cx="240"  cy="90"  r="1"/>
+    <circle cx="300"  cy="90"  r="1"/><circle cx="360"  cy="90"  r="1"/>
+    <circle cx="420"  cy="90"  r="1"/><circle cx="480"  cy="90"  r="1"/>
+    <circle cx="540"  cy="90"  r="1"/><circle cx="600"  cy="90"  r="1"/>
+    <circle cx="660"  cy="90"  r="1"/><circle cx="720"  cy="90"  r="1"/>
+    <circle cx="780"  cy="90"  r="1"/><circle cx="840"  cy="90"  r="1"/>
+    <circle cx="900"  cy="90"  r="1"/><circle cx="960"  cy="90"  r="1"/>
+    <circle cx="1020" cy="90"  r="1"/><circle cx="1080" cy="90"  r="1"/>
+    <circle cx="1140" cy="90"  r="1"/>
+
+    <circle cx="60"   cy="210" r="1"/><circle cx="120"  cy="210" r="1"/>
+    <circle cx="180"  cy="210" r="1"/><circle cx="240"  cy="210" r="1"/>
+    <circle cx="300"  cy="210" r="1"/><circle cx="360"  cy="210" r="1"/>
+    <circle cx="420"  cy="210" r="1"/><circle cx="480"  cy="210" r="1"/>
+    <circle cx="540"  cy="210" r="1"/><circle cx="600"  cy="210" r="1"/>
+    <circle cx="660"  cy="210" r="1"/><circle cx="720"  cy="210" r="1"/>
+    <circle cx="780"  cy="210" r="1"/><circle cx="840"  cy="210" r="1"/>
+    <circle cx="900"  cy="210" r="1"/><circle cx="960"  cy="210" r="1"/>
+    <circle cx="1020" cy="210" r="1"/><circle cx="1080" cy="210" r="1"/>
+    <circle cx="1140" cy="210" r="1"/>
+
+    <circle cx="60"   cy="270" r="1"/><circle cx="120"  cy="270" r="1"/>
+    <circle cx="180"  cy="270" r="1"/><circle cx="240"  cy="270" r="1"/>
+    <circle cx="300"  cy="270" r="1"/><circle cx="360"  cy="270" r="1"/>
+    <circle cx="420"  cy="270" r="1"/><circle cx="480"  cy="270" r="1"/>
+    <circle cx="540"  cy="270" r="1"/><circle cx="600"  cy="270" r="1"/>
+    <circle cx="660"  cy="270" r="1"/><circle cx="720"  cy="270" r="1"/>
+    <circle cx="780"  cy="270" r="1"/><circle cx="840"  cy="270" r="1"/>
+    <circle cx="900"  cy="270" r="1"/><circle cx="960"  cy="270" r="1"/>
+    <circle cx="1020" cy="270" r="1"/><circle cx="1080" cy="270" r="1"/>
+    <circle cx="1140" cy="270" r="1"/>
   </g>
 
-  <!-- === PERSPECTIVE GRID === -->
-  <!-- Horizon base line -->
-  <line x1="0" y1="148" x2="1200" y2="148" stroke="#FF00FF" stroke-width="1.5" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  <!-- ====== FLOATING HEXAGONS ====== -->
+  <!-- Large bg hex outline left -->
+  <g filter="url(#hexGlow)">
+    <use href="#hex" x="80"  y="60"  width="80" height="80" opacity="0.5">
+      <animate attributeName="y" values="60;50;60"  dur="8s"  repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="8s" repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="140" y="200" width="50" height="50" opacity="0.35">
+      <animate attributeName="y" values="200;190;200" dur="11s" repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="250" y="40"  width="35" height="35" opacity="0.3">
+      <animate attributeName="y" values="40;32;40"   dur="9s"  repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="1000" y="50"  width="70" height="70" opacity="0.45">
+      <animate attributeName="y" values="50;40;50"   dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.75;0.45" dur="10s" repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="1080" y="190" width="45" height="45" opacity="0.3">
+      <animate attributeName="y" values="190;180;190" dur="13s" repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="940"  y="230" width="30" height="30" opacity="0.25">
+      <animate attributeName="y" values="230;222;230" dur="7s"  repeatCount="indefinite"/>
+    </use>
+    <!-- Small scattered hexes -->
+    <use href="#hex" x="350" y="250" width="28" height="28" opacity="0.2">
+      <animate attributeName="y" values="250;242;250" dur="12s" repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="820" y="30"  width="32" height="32" opacity="0.2">
+      <animate attributeName="y" values="30;22;30"   dur="14s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- ====== GLOWING PARTICLES ====== -->
+  <g>
+    <!-- Gold particles -->
+    <circle cx="130"  cy="120" r="2.5" fill="#f59e0b" filter="url(#dotGlow)" opacity="0.9">
+      <animate attributeName="cy"      values="120;100;120"   dur="7s"   repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.3;0.9"   dur="7s"   repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320"  cy="230" r="2"   fill="#fbbf24" filter="url(#dotGlow)" opacity="0.7">
+      <animate attributeName="cy"      values="230;210;230"   dur="9s"   repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.2;0.7"   dur="9s"   repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200"  cy="160" r="1.5" fill="#f59e0b" filter="url(#dotGlow)" opacity="0.8">
+      <animate attributeName="cy"      values="160;140;160"   dur="11s"  repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.2;0.8"   dur="11s"  repeatCount="indefinite" begin="2s"/>
+    </circle>
+
+    <!-- Teal/blue particles -->
+    <circle cx="1050" cy="130" r="2.5" fill="#2dd4bf" filter="url(#dotGlow)" opacity="0.9">
+      <animate attributeName="cy"      values="130;110;130"   dur="8s"   repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.3;0.9"   dur="8s"   repeatCount="indefinite"/>
+    </circle>
+    <circle cx="880"  cy="250" r="2"   fill="#60a5fa" filter="url(#dotGlow)" opacity="0.7">
+      <animate attributeName="cy"      values="250;230;250"   dur="10s"  repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.2;0.7"   dur="10s"  repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <circle cx="1100" cy="200" r="1.5" fill="#2dd4bf" filter="url(#dotGlow)" opacity="0.8">
+      <animate attributeName="cy"      values="200;180;200"   dur="6s"   repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.25;0.8"  dur="6s"   repeatCount="indefinite" begin="3s"/>
+    </circle>
+
+    <!-- White stars -->
+    <circle cx="450"  cy="50"  r="1.5" fill="#ffffff" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650"  cy="30"  r="1"   fill="#ffffff" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="780"  cy="60"  r="1.5" fill="#ffffff" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s"   repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="510"  cy="260" r="1"   fill="#ffffff" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.7s" repeatCount="indefinite" begin="2.5s"/>
+    </circle>
+    <circle cx="700"  cy="240" r="1.2" fill="#ffffff" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="1.8s"/>
+    </circle>
+  </g>
+
+  <!-- ====== BOTTOM WAVE ====== -->
+  <!-- Gold shimmer wave -->
+  <path d="M0 275 Q150 255 300 270 T600 260 T900 272 T1200 262 L1200 300 L0 300 Z"
+        fill="url(#waveGold)" opacity="0.12">
+    <animate attributeName="d"
+      values="M0 275 Q150 255 300 270 T600 260 T900 272 T1200 262 L1200 300 L0 300 Z;
+              M0 268 Q150 280 300 265 T600 272 T900 260 T1200 270 L1200 300 L0 300 Z;
+              M0 275 Q150 255 300 270 T600 260 T900 272 T1200 262 L1200 300 L0 300 Z"
+      dur="10s" repeatCount="indefinite"/>
+  </path>
+  <!-- Teal wave -->
+  <path d="M0 285 Q300 270 600 280 T1200 272 L1200 300 L0 300 Z"
+        fill="#0d9488" opacity="0.1">
+    <animate attributeName="d"
+      values="M0 285 Q300 270 600 280 T1200 272 L1200 300 L0 300 Z;
+              M0 278 Q300 288 600 273 T1200 282 L1200 300 L0 300 Z;
+              M0 285 Q300 270 600 280 T1200 272 L1200 300 L0 300 Z"
+      dur="7s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- ====== DECORATIVE HORIZONTAL LINES ====== -->
+  <!-- Top thin gold accent line -->
+  <rect x="0" y="0" width="1200" height="1.5" fill="url(#waveGold)" opacity="0.7"/>
+
+  <!-- Side accent bars -->
+  <rect x="0"    y="50" width="3" height="200" fill="url(#waveGold)" opacity="0.4"/>
+  <rect x="1197" y="50" width="3" height="200" fill="url(#waveGold)" opacity="0.4"/>
+
+  <!-- Horizontal center lines (flanking text) -->
+  <line x1="60"  y1="150" x2="340" y2="150" stroke="url(#waveGold)" stroke-width="1" opacity="0.4">
+    <animate attributeName="x2"      values="340;380;340" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="1140" y1="150" x2="860" y2="150" stroke="url(#waveGold)" stroke-width="1" opacity="0.4">
+    <animate attributeName="x2"      values="860;820;860" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
   </line>
 
-  <!-- Vertical grid lines converging to vanishing point (600, 148) -->
-  <g stroke="url(#gridFade)" stroke-width="0.8" opacity="0.7">
-    <line x1="600" y1="148" x2="0"    y2="300"/>
-    <line x1="600" y1="148" x2="120"  y2="300"/>
-    <line x1="600" y1="148" x2="240"  y2="300"/>
-    <line x1="600" y1="148" x2="360"  y2="300"/>
-    <line x1="600" y1="148" x2="480"  y2="300"/>
-    <line x1="600" y1="148" x2="600"  y2="300"/>
-    <line x1="600" y1="148" x2="720"  y2="300"/>
-    <line x1="600" y1="148" x2="840"  y2="300"/>
-    <line x1="600" y1="148" x2="960"  y2="300"/>
-    <line x1="600" y1="148" x2="1080" y2="300"/>
-    <line x1="600" y1="148" x2="1200" y2="300"/>
+  <!-- Diamond endpoints on lines -->
+  <g filter="url(#hexGlow)" fill="#f59e0b">
+    <rect x="56"   y="147" width="5" height="5" transform="rotate(45 58.5 149.5)" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1136" y="147" width="5" height="5" transform="rotate(45 1138.5 149.5)" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="5s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
-  <!-- Horizontal grid lines (perspective scaled) -->
-  <g stroke="#FF00FF" stroke-width="0.6" opacity="0.4">
-    <line x1="0" y1="175" x2="1200" y2="175"/>
-    <line x1="0" y1="200" x2="1200" y2="200"/>
-    <line x1="0" y1="222" x2="1200" y2="222"/>
-    <line x1="0" y1="241" x2="1200" y2="241"/>
-    <line x1="0" y1="258" x2="1200" y2="258"/>
-    <line x1="0" y1="272" x2="1200" y2="272"/>
-    <line x1="0" y1="284" x2="1200" y2="284"/>
-    <line x1="0" y1="293" x2="1200" y2="293"/>
-  </g>
-
-  <!-- === SCANLINE OVERLAY (retro feel) === -->
-  <rect width="1200" height="148" fill="transparent" opacity="0.03">
-    <animate attributeName="opacity" values="0.03;0.06;0.03" dur="0.1s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- === TEXT === -->
-  <!-- Name shadow/glow layer -->
-  <text x="600" y="76" text-anchor="middle"
-        font-family="'Segoe UI', Arial Black, sans-serif"
-        font-size="54" font-weight="900" letter-spacing="3"
-        fill="#FF1493" filter="url(#softBlur)" opacity="0.8">
+  <!-- ====== TEXT ====== -->
+  <!-- Name glow bloom -->
+  <text x="600" y="138" text-anchor="middle"
+        font-family="'Segoe UI', -apple-system, Arial, sans-serif"
+        font-size="58" font-weight="800" letter-spacing="2"
+        fill="#f59e0b" filter="url(#softBloom)" opacity="0.6">
     Abhishek Karthik J
   </text>
 
   <!-- Name main text -->
-  <text x="600" y="76" text-anchor="middle"
-        font-family="'Segoe UI', Arial Black, sans-serif"
-        font-size="54" font-weight="900" letter-spacing="3"
-        fill="url(#nameGrad)" filter="url(#glowText)">
+  <text x="600" y="138" text-anchor="middle"
+        font-family="'Segoe UI', -apple-system, Arial, sans-serif"
+        font-size="58" font-weight="800" letter-spacing="2"
+        fill="url(#goldText)" filter="url(#glow)">
     Abhishek Karthik J
-    <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
   </text>
 
   <!-- Subtitle glow -->
-  <text x="600" y="108" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="16" font-weight="600" letter-spacing="6"
-        fill="#FF1493" filter="url(#softBlur)" opacity="0.6">
+  <text x="600" y="175" text-anchor="middle"
+        font-family="'Segoe UI', -apple-system, Arial, sans-serif"
+        font-size="15" font-weight="500" letter-spacing="7"
+        fill="#2dd4bf" filter="url(#softBloom)" opacity="0.5">
     AI  ·  ML  ·  FULL-STACK DEVELOPER
   </text>
 
   <!-- Subtitle text -->
-  <text x="600" y="108" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="16" font-weight="600" letter-spacing="6"
-        fill="url(#subGrad)" filter="url(#neonGlow)">
+  <text x="600" y="175" text-anchor="middle"
+        font-family="'Segoe UI', -apple-system, Arial, sans-serif"
+        font-size="15" font-weight="500" letter-spacing="7"
+        fill="url(#tealSub)">
     AI  ·  ML  ·  FULL-STACK DEVELOPER
-    <animate attributeName="opacity" values="0;1" dur="1.5s" fill="freeze" begin="0.5s"/>
+    <animate attributeName="opacity" values="0;1" dur="1.8s" fill="freeze" begin="0.5s"/>
   </text>
 
   <!-- Location -->
-  <text x="600" y="135" text-anchor="middle"
-        font-family="'Segoe UI', Arial, sans-serif"
-        font-size="13" letter-spacing="3" fill="#00FFFF" opacity="0.85">
+  <text x="600" y="207" text-anchor="middle"
+        font-family="'Segoe UI', -apple-system, Arial, sans-serif"
+        font-size="12" letter-spacing="4"
+        fill="#64748b" opacity="0.9">
     📍 CHENNAI, INDIA
-    <animate attributeName="opacity" values="0;0.85" dur="2s" fill="freeze" begin="1s"/>
+    <animate attributeName="opacity" values="0;0.9" dur="2s" fill="freeze" begin="1s"/>
   </text>
 
-  <!-- === NEON SIDE DECORATION === -->
-  <!-- Left neon line -->
-  <g filter="url(#neonGlow)">
-    <line x1="30" y1="148" x2="370" y2="148" stroke="#FF1493" stroke-width="1.5" opacity="0.7">
-      <animate attributeName="x2" values="370;420;370" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
-    </line>
-    <!-- Right neon line -->
-    <line x1="1170" y1="148" x2="830" y2="148" stroke="#FF1493" stroke-width="1.5" opacity="0.7">
-      <animate attributeName="x2" values="830;780;830" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
-    </line>
-  </g>
-
-  <!-- Corner accent dots -->
-  <circle cx="30"   cy="148" r="3" fill="#FF1493" filter="url(#neonGlow)">
-    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1170" cy="148" r="3" fill="#FF1493" filter="url(#neonGlow)">
-    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite" begin="1s"/>
-  </circle>
-
-  <!-- === TOP BORDER NEON LINE === -->
-  <rect x="0" y="0" width="1200" height="2" fill="#FF1493" opacity="0.5" filter="url(#neonGlow)"/>
-
-  <!-- === BOTTOM BORDER NEON LINE === -->
-  <rect x="0" y="298" width="1200" height="2" fill="#00FFFF" opacity="0.5" filter="url(#neonGlow)"/>
-
+  <!-- Bottom border gold line -->
+  <rect x="0" y="298" width="1200" height="2" fill="url(#waveGold)" opacity="0.6"/>
 </svg>
