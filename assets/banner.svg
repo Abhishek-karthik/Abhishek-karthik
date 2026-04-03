@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <!-- Aurora gradient backgrounds -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="50%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+
+    <linearGradient id="aurora1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#6366f1;#a855f7;#ec4899;#6366f1" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.6">
+        <animate attributeName="stop-color" values="#a855f7;#ec4899;#06b6d4;#a855f7" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#06b6d4;#6366f1;#a855f7;#06b6d4" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="aurora2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.5">
+        <animate attributeName="stop-color" values="#ec4899;#06b6d4;#10b981;#ec4899" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.4">
+        <animate attributeName="stop-color" values="#10b981;#6366f1;#ec4899;#10b981" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="aurora3" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3">
+        <animate attributeName="stop-color" values="#f59e0b;#ef4444;#8b5cf6;#f59e0b" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.2">
+        <animate attributeName="stop-color" values="#8b5cf6;#06b6d4;#f59e0b;#8b5cf6" dur="12s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Glow filter for text -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Radial glow for orbs -->
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff">
+        <animate attributeName="stop-color" values="#ffffff;#e0e7ff;#ffffff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#c7d2fe">
+        <animate attributeName="stop-color" values="#c7d2fe;#ffffff;#c7d2fe" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#ffffff">
+        <animate attributeName="stop-color" values="#ffffff;#e0e7ff;#ffffff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="subtitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a5b4fc">
+        <animate attributeName="stop-color" values="#a5b4fc;#c4b5fd;#67e8f9;#a5b4fc" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#67e8f9">
+        <animate attributeName="stop-color" values="#67e8f9;#a5b4fc;#c4b5fd;#67e8f9" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(99,102,241,0.08)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Subtle grid overlay -->
+  <rect width="1200" height="300" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- Aurora blobs -->
+  <ellipse cx="300" cy="150" rx="350" ry="180" fill="url(#aurora1)" opacity="0.4">
+    <animate attributeName="cx" values="300;500;300" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="150;120;150" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="350;400;350" dur="12s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <ellipse cx="900" cy="150" rx="300" ry="200" fill="url(#aurora2)" opacity="0.35">
+    <animate attributeName="cx" values="900;700;900" dur="13s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="150;180;150" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="200;160;200" dur="14s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <ellipse cx="600" cy="200" rx="250" ry="120" fill="url(#aurora3)" opacity="0.3">
+    <animate attributeName="cx" values="600;650;550;600" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="200;160;220;200" dur="9s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Floating orbs -->
+  <circle cx="200" cy="80" r="60" fill="url(#orb1)">
+    <animate attributeName="cx" values="200;250;180;200" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="80;120;60;80" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="60;80;50;60" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1000" cy="220" r="50" fill="url(#orb2)">
+    <animate attributeName="cx" values="1000;950;1050;1000" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="220;180;240;220" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="50;70;40;50" dur="14s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="700" cy="50" r="40" fill="url(#orb3)">
+    <animate attributeName="cx" values="700;750;680;700" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="50;80;40;50" dur="11s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Twinkling stars -->
+  <circle cx="100" cy="40" r="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="260" r="1" fill="#c4b5fd">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="400" cy="30" r="1.5" fill="#67e8f9">
+    <animate attributeName="opacity" values="0.1;1;0.1" dur="4s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle cx="550" cy="270" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  <circle cx="750" cy="25" r="1.5" fill="#a5b4fc">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+  <circle cx="850" cy="280" r="1" fill="#f9a8d4">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+  <circle cx="1050" cy="50" r="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0.1;0.9;0.1" dur="3.2s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+  <circle cx="1150" cy="230" r="1" fill="#67e8f9">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
+  </circle>
+  <circle cx="150" cy="180" r="1" fill="#c4b5fd">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.5s" repeatCount="indefinite" begin="1.2s"/>
+  </circle>
+  <circle cx="950" cy="100" r="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0.15;1;0.15" dur="3.8s" repeatCount="indefinite" begin="0.4s"/>
+  </circle>
+  <circle cx="500" cy="90" r="1" fill="#f9a8d4">
+    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" repeatCount="indefinite" begin="1.8s"/>
+  </circle>
+  <circle cx="1100" cy="140" r="1" fill="#a5b4fc">
+    <animate attributeName="opacity" values="0.25;1;0.25" dur="3.3s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+
+  <!-- Pulse ring behind text -->
+  <circle cx="600" cy="125" r="90" fill="none" stroke="url(#aurora1)" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="r" values="90;140;90" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="125" r="60" fill="none" stroke="url(#aurora2)" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="r" values="60;120;60" dur="8s" repeatCount="indefinite" begin="2s"/>
+    <animate attributeName="opacity" values="0.2;0;0.2" dur="8s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+
+  <!-- Decorative lines -->
+  <line x1="80" y1="290" x2="350" y2="290" stroke="url(#aurora1)" stroke-width="1" opacity="0.3">
+    <animate attributeName="x2" values="350;400;350" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="850" y1="290" x2="1120" y2="290" stroke="url(#aurora2)" stroke-width="1" opacity="0.3">
+    <animate attributeName="x1" values="850;800;850" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Main name text -->
+  <text x="600" y="120" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="52" font-weight="700" fill="url(#textGrad)" filter="url(#glow)" letter-spacing="2">
+    Abhishek Karthik J
+    <animate attributeName="opacity" values="0;1" dur="1.5s" fill="freeze"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="165" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="400" fill="url(#subtitleGrad)" letter-spacing="4" opacity="0.9">
+    AI  ·  ML  ·  FULL-STACK DEVELOPER
+    <animate attributeName="opacity" values="0;0.9" dur="2s" fill="freeze" begin="0.5s"/>
+  </text>
+
+  <!-- Location with icon -->
+  <text x="600" y="200" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8" letter-spacing="2">
+    📍 Chennai, India
+    <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze" begin="1s"/>
+  </text>
+
+  <!-- Bottom decorative wave -->
+  <path d="M0 280 Q200 260 400 275 T800 265 T1200 280 L1200 300 L0 300 Z" fill="url(#aurora1)" opacity="0.15">
+    <animate attributeName="d" values="M0 280 Q200 260 400 275 T800 265 T1200 280 L1200 300 L0 300 Z;M0 275 Q200 285 400 268 T800 280 T1200 270 L1200 300 L0 300 Z;M0 280 Q200 260 400 275 T800 265 T1200 280 L1200 300 L0 300 Z" dur="8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 285 Q300 270 600 285 T1200 278 L1200 300 L0 300 Z" fill="url(#aurora2)" opacity="0.1">
+    <animate attributeName="d" values="M0 285 Q300 270 600 285 T1200 278 L1200 300 L0 300 Z;M0 278 Q300 290 600 275 T1200 285 L1200 300 L0 300 Z;M0 285 Q300 270 600 285 T1200 278 L1200 300 L0 300 Z" dur="10s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Top edge subtle line -->
+  <rect x="0" y="0" width="1200" height="1" fill="url(#aurora1)" opacity="0.5"/>
+</svg>
