@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,50:1f2937,100:374151&height=220&section=header&text=Abhishek%20Karthik%20J&fontSize=60&fontAlign=50&fontAlignY=50&fontColor=ffffff&desc=Chennai,%20India&descAlign=50&descAlignY=70&descSize=16&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:12c2e9,50:c471ed,100:f64f59&height=220&section=header&text=Abhishek%20Karthik%20J&fontSize=60&fontAlign=50&fontAlignY=50&fontColor=ffffff&desc=Chennai,%20India&descAlign=50&descAlignY=70&descSize=20&animation=twinkling" width="100%"/>
 
 <div align="center">
 
